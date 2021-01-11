@@ -22,10 +22,14 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. How would you describe acessibility on the web to someone new to programming?
-2. Talk about 3 different things you can do to ensure your website is accessible. 
-3. How would you explain the concept of a variable to someone new to programming?
-4. What is the purpose of using functions in code?
+1. How would you describe acessibility on the web to someone new to programming? Accessbility would be making sure that a website is accessible for all walks of life. It's understanding how to make website with everyone in mind. Trying to make a website without bias. People are different capabilities, handicaps, etc. Leave no one out of your creation.
+
+2. Talk about 3 different things you can do to ensure your website is accessible. I would make sure that I use semantic tags so that screen readers and can be correctly used. I would make sure I use font colors that are not distracting and use colors that wouldn't leave out colorblind individuals. 
+
+3. How would you explain the concept of a variable to someone new to programming? I would explain that a variable is like a wall outlet. Its like a placeholder and it stores information so when it is time to plug in that variable, we can just plug it in when we hit run (hit the on button on a machine, etc).
+
+
+4. What is the purpose of using functions in code? The purpose of using functions is not repeating yourself. Functions are remind me of trash bags. Instead of grabbing invidual trash one by one and taking it to the the dump. I can just store invidual trash items in a bag and then take all of the trash to the dump at once. It is way more efficient to not repeat repetitive actions.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
