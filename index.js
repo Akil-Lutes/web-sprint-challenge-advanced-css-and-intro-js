@@ -315,10 +315,10 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 
 /*First I set/created an empty array called newArr. I need to be able to pass and return the artists who have more than 100 paintings (pass the conditional). */
-function lotsOfArt(){
+function lotsOfArt(arr){
   let newArr = [];
   /*I created a for of loop to be able to loop through specific object keys. I need more practice on for of loops. artist (can be named anything and still work. I use artist for readability) is the index. artists is the name of the array.  */
-    for (let artist of artists)
+    for (let artist of arr)
     //My if-statement is my conditional used to figure out the artists who have more than 100 paintings.
       if (artist.paintings > 100) {
           newArr.push(artist.name);
@@ -326,7 +326,7 @@ function lotsOfArt(){
   } 
   
 
-  console.log(lotsOfArt());
+  console.log(lotsOfArt(artists));
 
 
 
