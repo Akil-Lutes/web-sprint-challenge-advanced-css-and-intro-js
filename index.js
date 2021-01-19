@@ -209,11 +209,11 @@ Practice accessing data above by console.log-ing following items:
 
 //(1) Name of the first artist (0th index) in the array
 
-console.log(artist[0].name);
+console.log(artists[0].name);
 
 //(2) Bio of the third artist (2nd index) in the array 
 
-console.log(artist[2].bio);
+console.log(artists[2].bio);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -233,10 +233,12 @@ Use getArtistByIndex to do the following:
 Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
 function getArtistByIndex(arr, num1) {
-for (let i = 0; i < arr.length; i++) {
-    return arr[num1].name;
-}
+  for (let i = 0; i < arr.length; i++) {
+      return arr[num1].name;
+  }
 }  
+
+console.log(getArtistByIndex(artists, 0));
 
 
 
@@ -247,15 +249,17 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
+
+/* I used a paramter arr for artists. I want my function to be reusable. The index variable artist can be named anything but I used the name artist for better readability. A regualar for loop I would've used the arr paramter and arr.length */
 function get20s(arr){
   let newArr = [];
-  for (artist of artists) {
+  for (let artist of arr) {
   if (artist['years'].startsWith('1900') || (artist['years'].startsWith('19') && (artist['years'].endsWith('20', 8)))) {
      console.log('This artist did not live and die in the 20th century');
   } else if (artist['years'].startsWith('19') || (artist['years'].startsWith('19') && (artist['years'].endsWith('2000', 8)))) {
     newArr.push(artist['name']);
-  }
-} return newArr
+    }
+  } return newArr;
 }
 
 console.log(get20s(artists));
@@ -309,15 +313,20 @@ Use lotsOfArt to do the following:
 2. Return an array with names of artists in the received array who painted more than 100 paintings.
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(arr){
+
+/*First I set/created an empty array called newArr. I need to be able to pass and return the artists who have more than 100 paintings (pass the conditional). */
+function lotsOfArt(){
   let newArr = [];
-    for (artist of artists)
+  /*I created a for of loop to be able to loop through specific object keys. I need more practice on for of loops. artist (can be named anything and still work. I use artist for readability) is the index. artists is the name of the array.  */
+    for (let artist of artists)
+    //My if-statement is my conditional used to figure out the artists who have more than 100 paintings.
       if (artist.paintings > 100) {
           newArr.push(artist.name);
       } return newArr;
   } 
   
-  console.log(lotsOfArt(artists));
+
+  console.log(lotsOfArt());
 
 
 
@@ -339,21 +348,21 @@ Create a function called `getHTML()` that takes the parameter `data` and uses a 
 The function should console.log 50 chunks of HTML code that match the structure above. 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+// function getHTML(/* Code here */){
 
-  /* Code here */
+//   /* Code here */
 
-}
+// }
 
 
 /* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪
 Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */){
+// function randomize(/* Code here */){
 
-  /* Code here */
+//   /* Code here */
 
-}
+// }
 
 
 /* 💪💪💪💪💪💪 STRETCH 3: 💪💪💪💪💪💪
